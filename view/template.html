@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <!-- Bootstrap CSS -->
+  <link href="<?=$GLOBALS['project_http']?>/view/source/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="<?=$GLOBALS['project_http']?>/view/source/fontawesome/css/all.min.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6  mb-5 mt-4 offset-md-3">
+
+            <?php page_content(); ?>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="text-center">Registros</h1>
+            <?php view_table(); ?>
+        </div>
+    </div>
+
+</div>
+
+<script src="<?=$GLOBALS['project_http']?>/view/source/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

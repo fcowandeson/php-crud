@@ -1,0 +1,20 @@
+<h1 class="text-center">Cadastro</h1>
+<form action="<?=$GLOBALS['project_http']?>/controller/insert_filme.php" method="post">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome do filme</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite o nome" required name="nome_filmes">
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Descrição</label>
+        <textarea type="text" class="form-control" id="desc" placeholder="Descrição" name="descricao"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="mensagem" class="form-label">Quantidades para estoque</label>
+        <input class="form-control" id="mensagem" type="number" placeholder="Numero em estoque" required name="qtd_estoque">
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary" > <i class="fa-solid fa-paper-plane"></i> Enviar</button>
+    </div>
+</form>
+
+            

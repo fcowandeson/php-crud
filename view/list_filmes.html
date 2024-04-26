@@ -1,0 +1,32 @@
+<table class="table table-bordered table-striped table-sm table-responsive">
+    <thead class="thead-dark">
+    <tr>
+        <?php foreach($table_title as $key){ ?>
+            <th scope="col"><?=$key?></th>
+        <?php } ?>
+            <th scope="col"></th>
+            <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach($table_content as $key => $value){ ?>
+    <tr>
+        <?php foreach($table_title as $k => $v){ ?>
+        <td scope="col"><?=$value[$k];?></td>
+        <?php } ?>
+
+            <td scope="col" align="center">
+                <a href="<?=$GLOBALS['project_http'];?>/controller/delete_filme.php?id_filmes=<?=$value['id_filmes'];?>" class="btn btn-danger btn-sm">
+                    <i class="fa-solid fa-trash"></i>
+                </a>
+            </td>
+            <td scope="col" align="center">
+                <a href="<?=$GLOBALS['project_http'];?>/index.php?id_filmes=<?=$value['id_filmes'];?>&&op=update" class="btn btn-primary btn-sm">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </a>
+            </td>
+        <?php } ?>
+        
+    </tr>
+    </tbody>
+</table>
