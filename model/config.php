@@ -1,7 +1,7 @@
 <?php 
     ini_set("display_errors", 1);
 
-    $project_name = "crud";
+    $project_name = "php-crud";
 
     $project_path = $_SERVER["DOCUMENT_ROOT"]."/".$project_name."/";
 
