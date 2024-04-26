@@ -1,20 +1,4 @@
 <?php 
-    
-    /* conexão com o banco metodo sem POO
-    try {
-        $conection = new PDO("mysql:dbname=db_loca;host=localhost", "root", "");
-        $cmd = $conection->prepare("SELECT * FROM filmes ORDER BY id_filmes");
-        //$cmd->bindValue(":id",1);
-        $cmd->execute();
-        $resultado = $cmd->fetchALL(PDO::FETCH_ASSOC);
-        print "<pre>";
-        print_r($resultado);
-        print "<pre>";
-    } catch (PDOException $e) {
-        echo "erro ao acessar banco".$e->getMessage();
-    } catch (Exception $e) {
-        echo "erro ".$e->getMessage();
-    } */
 
 	class Conection{
 		
@@ -36,8 +20,4 @@
 		}
 	}
     
-    //funções para gerenciamento do banco 
-   /* function list_filmes($table, $fields){
-        $conection->prepare();
-    } */
 ?>
